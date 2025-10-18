@@ -45,9 +45,3 @@ The model is trained on a **Kaggle dataset** containing labeled examples of real
 - NLTK / SpaCy (text preprocessing)  
 - Gradio (web interface for interactive predictions)  
 
----
-
-## Installation
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/fake-news-detection.git
