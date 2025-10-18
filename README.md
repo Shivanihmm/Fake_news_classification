@@ -24,7 +24,7 @@ This project can be used for:
 
 ## Dataset
 The model is trained on a **Kaggle dataset** containing labeled examples of real and fake news articles.  
-- **Source:** [Kaggle Fake News Dataset]([https://www.kaggle.com/c/fake-news/data](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification))  
+- **Source:** [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?utm_source=chatgpt.com)  
 - Each article is preprocessed to remove noise and tokenized for embedding  
 - Dataset includes thousands of news articles covering multiple domains  
 
