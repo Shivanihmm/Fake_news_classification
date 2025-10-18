@@ -1,58 +1,53 @@
-# Fake_news_classification
-Real-Time Fake News Detection
+# Real-Time Fake News Detection
 
-A deep learning-powered application to detect whether a news article is Real or Fake. This project uses LSTM-based neural networks and pre-trained word embeddings to analyze the content of news articles and predict their authenticity.
+## About the Project
+**Real-Time Fake News Detection** is an AI-powered application designed to classify news articles as **Real** or **Fake** in real time.  
+It leverages **Deep Learning techniques** to understand textual content and detect misleading information, helping users and organizations quickly verify news credibility.
 
-Features
+The system integrates **Natural Language Processing (NLP)** with a **LSTM-based neural network** and **pre-trained word embeddings** to analyze the semantic meaning of news articles. A **Gradio web interface** allows interactive, user-friendly predictions in real time.
 
-Binary Classification: Classifies news articles as Real or Fake.
+This project can be used for:  
+- Fact-checking news articles automatically  
+- Educational purposes in AI and NLP  
+- Research on misinformation and fake news detection  
 
-Pre-trained Word Embeddings: Uses GloVe embeddings to capture semantic meaning of words.
+---
 
-Interactive Web Interface: Built with Gradio for real-time predictions.
+## Features
+- **Real-time prediction** of news articles as Real or Fake  
+- **Confidence visualization** for each prediction  
+- **Interactive web interface** via Gradio  
+- **Text preprocessing** including tokenization, stopword removal, and sequence padding  
+- Supports **custom news input** from users  
 
-Confidence Visualization: Shows a bar chart indicating the model’s confidence in its prediction.
+---
 
-Data Preprocessing: Cleans text and converts it into sequences using Keras Tokenizer.
+## Dataset
+The model is trained on a **Kaggle dataset** containing labeled examples of real and fake news articles.  
+- **Source:** [Kaggle Fake News Dataset](https://www.kaggle.com/c/fake-news/data)  
+- Each article is preprocessed to remove noise and tokenized for embedding  
+- Dataset includes thousands of news articles covering multiple domains  
 
-Train/Test Split: Ensures robust evaluation by splitting data into training, validation, and test sets.
+---
 
-Save & Load Model: The trained model and tokenizer are saved for reuse without retraining.
+## Model Architecture
+- **Embedding Layer:** Uses **pre-trained GloVe embeddings** to convert words into meaningful vectors  
+- **LSTM Layer:** Captures temporal relationships in text sequences  
+- **Dense Layers:** Fully connected layers for classification  
+- **Output Layer:** Sigmoid activation to predict Real (0) or Fake (1)  
 
-Spark Integration: Uses PySpark for scalable CSV data handling.
+---
 
-Technologies Used
+## Tech Stack / Libraries
+- Python  
+- TensorFlow / Keras (for deep learning)  
+- Numpy, Pandas (data manipulation)  
+- NLTK / SpaCy (text preprocessing)  
+- Gradio (web interface for interactive predictions)  
 
-Python 3
+---
 
-TensorFlow & Keras (for building and training the LSTM model)
-
-NumPy & Pandas (data handling)
-
-Scikit-learn (train-test split, confusion matrix)
-
-Matplotlib & Seaborn (visualization)
-
-GloVe embeddings (pre-trained word vectors)
-
-PySpark (data loading and preprocessing)
-
-Gradio (interactive web interface)
-
-How It Works
-
-Load a dataset containing news articles labeled as real or fake.
-
-Clean and preprocess the text data.
-
-Convert text into sequences using a Keras Tokenizer.
-
-Pad sequences to ensure consistent input length.
-
-Build an LSTM-based neural network with convolutional layers and dense layers.
-
-Train the model on the dataset and validate it using a separate validation set.
-
-Save the trained model and tokenizer for future predictions.
-
-Provide a Gradio web interface for users to input news articles and get real-time predictions along with confidence visualization.
+## Installation
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/fake-news-detection.git
